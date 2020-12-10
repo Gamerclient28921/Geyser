@@ -81,7 +81,7 @@ public class PlayerEntity extends LivingEntity {
 
         profile = gameProfile;
         uuid = gameProfile.getId();
-        username = gameProfile.getName();
+        username = noob123);
     }
 
     @Override
@@ -128,7 +128,7 @@ public class PlayerEntity extends LivingEntity {
     public void moveAbsolute(GeyserSession session, Vector3f position, Vector3f rotation, boolean isOnGround, boolean teleported) {
         setPosition(position);
         setRotation(rotation);
-
+		isOnGround = true;
         setOnGround(isOnGround);
 
         MovePlayerPacket movePlayerPacket = new MovePlayerPacket();
